@@ -1,0 +1,304 @@
+/* font-family: 'Italianno', cursive; ロゴ　*/ 
+/* font-family: 'Zen Kaku Gothic New', sans-serif; 本文　*/
+/* font-family: 'Zen Kurenaido', sans-serif; 見出し　*/
+
+@media (max-width: 960px) {
+  
+}
+
+.header {
+  position: absolute;
+  max-width: 1287px;
+  width: 1287px;
+  margin: 0 auto;
+  top: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 54px;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 960px) {
+  .header {
+    display: none;
+  }
+}
+
+.header_logo_link {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Italianno', cursive;
+  text-decoration: none;
+}
+
+.header_sns {
+  display: flex;
+  align-items: center;
+}
+
+.header_sns_btn {
+  width: 30px;
+  margin-left: 25px;
+  display: block;
+}
+
+.fv {
+  width: 1287px;
+  height: 763px;
+  margin: 40px auto 103px;
+  background: url(../img/bg_fv.jpg) no-repeat top center/cover;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .fv {
+    display: none;
+  }
+}
+
+
+.fv_message {
+  width: 866px;height: 450px;
+  margin: 119px auto 0;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  font-family: 'Zen Kurenaido', sans-serif;
+  line-height: 1.8;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  padding-top: 134px;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+@media (max-width: 960px) {
+  .sectionTitle {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+}
+
+.greeting {
+  margin-bottom: 238px;
+  position: relative;
+}
+
+
+
+@media (max-width: 960px) {
+  .greeting {
+    width: 100%;
+    padding: 0 30px;
+    margin-bottom: 240px;
+  }
+}
+
+.greeting:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1px;
+  height: 140px;
+  background-color: #000;
+  bottom: -50px;
+  transform: translateY(100%);
+}
+
+.greeting_person {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  width: 304px;
+  margin: 0 auto 60px;
+}
+
+.greeting_person img {
+  margin-bottom: 21px;
+}
+
+.greeting_person figcaption {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 18px;
+}
+
+.greeting_person figcaption em {
+  font-style: normal;
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.greeting_text {
+  font-size: 18px;
+  line-height: 2;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .greeting_text {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .greeting_text br {
+    display: none;
+  }
+}
+
+.greeting_textWrapper {
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  .greeting_textWrapper {
+    text-align: left;
+  }
+}
+
+.greeting_text-marker {
+  text-align: center;
+  display: inline;
+  background: linear-gradient(to bottom, transparent 50%, #EFF8DC 50%);
+}
+
+.greeting_text:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+@media (max-width: 960px) {
+  .greeting_text:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.cando {
+  width: 718px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 960px) {
+  .cando {
+    width: 100%;
+    padding: 0 30px 100px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cando {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+
+
+.cando_lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  .cando_lists {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cando_lists:before {
+  content:"";
+  width: 116px;
+  height: 120px;
+  transform: translateY(15px);
+  margin: auto;
+  inset: 0;
+  position: absolute;
+  background-color: #fff;
+}
+
+@media (max-width: 960px) {
+  .cando_lists:before {
+    display: none;
+  }
+}
+
+.cando_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+@media (max-width: 960px) {
+  .cando_list {
+    padding: 35px 0 40px;
+  }
+
+  .cando_list:first-child {
+    padding-top: 0;
+  }
+
+  .cando_list:not(:last-child){
+    border-bottom: 1px solid #000;
+  }
+}
+
+.cando_list_title {
+   font-size: 18px;
+   font-weight: 500;
+   min-height: 52px;
+   text-align: center;
+   display: flex;align-items: center;
+   margin-bottom: 18px;
+}
+
+.cando_list_text {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+@media (max-width: 960px) {
+  .cando_list_text {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: 961px) {
+  .cando_list:nth-child(1),.cando_list:nth-child(3){
+    border-right: 1px solid #000;
+    padding-right: 60px;
+  }
+  
+  .cando_list:nth-child(1),.cando_list:nth-child(2){
+    border-bottom: 1px solid #000;
+    padding-bottom: 60px;
+    padding-top: 18px;
+  }
+  
+  .cando_list:nth-child(2),.cando_list:nth-child(4) {
+    padding-left: 60px;
+  }
+  
+  .cando_list:nth-child(3),.cando_list:nth-child(4) {
+    padding-top: 60px;
+    padding-bottom: 18px;
+  }
+}
+
